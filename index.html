@@ -4,22 +4,69 @@
     <title>SheCodes</title>
     <meta charset="UTF-8" />
 
-    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
 
   <body>
-    <h1>World Clock</h1>
-    <label for="timezone">Select a city:</label>
+    <div class="container">
+      <h1 class="title">World Clock</h1>
+      <select name="timezone" id="timezone" class="select">
+        <option value="Select a city">Select a city</option>
+        <option value="paris">Paris 🇫🇷</option>
+        <option value="tokyo">Tokyo 🇯🇵</option>
+        <option value="sydney">Sydney 🇦🇺</option>
+      </select>
 
-    <select name="timezone" id="timezone">
-      `
-      <option value="">Select a city</option>
-      <option value="paris">Paris 🇫🇷</option>
-      <option value="tokyo">Tokyo 🇯🇵</option>
-      <option value="sydney">Sydney 🇦🇺</option>
-    </select>
+      <div class="cities">
+        <div class="city">
+          <div class="info-left">
+            <h2>Los Angeles 🇺🇸</h2>
+            <div class="date">August 15th 2022</div>
+          </div>
+
+          <div class="time">1:48:15 AM</div>
+        </div>
+
+        <div class="city">
+          <div class="info-left">
+            <h2>Paris 🇫🇷</h2>
+            <div class="date">August 15th 2022</div>
+          </div>
+
+          <div class="time">1:48:15 AM</div>
+        </div>
+
+        <div class="city">
+          <div class="info-left">
+            <h2>Tokyo 🇯🇵</h2>
+            <div class="date">August 15th 2022</div>
+          </div>
+
+          <div class="time">1:48:15 AM</div>
+        </div>
+
+        <div class="city">
+          <div class="info-left">
+            <h2>Sydney 🇦🇺</h2>
+            <div class="date">August 15th 2022</div>
+          </div>
+
+          <div class="time">1:48:15 AM</div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <footer>Code by Lara Monteagudo Tubau</footer>
