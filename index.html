@@ -4,6 +4,7 @@
     <title>SheCodes</title>
     <meta charset="UTF-8" />
 
+    <!-- Link to CSS -->
     <link href="src/style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <!-- Include moment.js and moment-timezone -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
@@ -30,44 +32,46 @@
       </select>
 
       <div class="cities">
-        <div class="city">
+        <div class="city" id="los-angeles">
           <div class="info-left">
             <h2>Los Angeles 🇺🇸</h2>
             <div class="date">August 15th 2022</div>
           </div>
 
-          <div class="time">1:48:15 AM</div>
+          <div class="time" id="los-angeles-time">1:48:15 AM</div>
         </div>
 
-        <div class="city">
+        <div class="city" id="paris">
           <div class="info-left">
             <h2>Paris 🇫🇷</h2>
             <div class="date">August 15th 2022</div>
           </div>
 
-          <div class="time">1:48:15 AM</div>
+          <div class="time" id="paris-time">1:48:15 AM</div>
         </div>
 
-        <div class="city">
+        <div class="city" id="tokyo">
           <div class="info-left">
             <h2>Tokyo 🇯🇵</h2>
             <div class="date">August 15th 2022</div>
           </div>
 
-          <div class="time">1:48:15 AM</div>
+          <div class="time" id="tokyo-time">1:48:15 AM</div>
         </div>
 
-        <div class="city">
+        <div class="city" id="sydney">
           <div class="info-left">
             <h2>Sydney 🇦🇺</h2>
             <div class="date">August 15th 2022</div>
           </div>
 
-          <div class="time">1:48:15 AM</div>
+          <div class="time" id="sydney-time">1:48:15 AM</div>
         </div>
       </div>
     </div>
   </body>
 
   <footer>Code by Lara Monteagudo Tubau</footer>
+
+  <script src="src/script.js"></script>
 </html>
