@@ -1,18 +1,22 @@
 // Define an array of cities and their corresponding timezones
 let cities = [
-  ["los-angeles-time", "America/Los_Angeles"],
-  ["paris-time", "Europe/Paris"],
-  ["tokyo-time", "Asia/Tokyo"],
-  ["sydney-time", "Australia/Sydney"],
+  ["los-angeles-date", "los-angeles-time", "America/Los_Angeles"],
+  ["paris-date", "paris-time", "Europe/Paris"],
+  ["tokyo-date", "tokyo-time", "Asia/Tokyo"],
+  ["sydney-date", "sydney-time", "Australia/Sydney"],
 ];
 
 // Function to update time for a specific city
 function updateTime(city) {
-  let cityName = city[0]; // City name (for selecting the HTML element)
-  let cityTimezone = city[1]; // Timezone for moment.js
+  let cityDate = city[0];
+  let cityTime = city[1]; // City name (for selecting the HTML element)
+  let cityTimezone = city[2]; // Timezone for moment.js
 
   // Select the HTML element and update its content with the current time
-  document.querySelector(`#${cityName}`).innerHTML = moment()
+  document.querySelector(`#${cityDate}`).innerHTML = moment()
+    .tz(cityTimezone)
+    .format("LL");
+  document.querySelector(`#${cityTime}`).innerHTML = moment()
     .tz(cityTimezone)
     .format("LTS");
 }
